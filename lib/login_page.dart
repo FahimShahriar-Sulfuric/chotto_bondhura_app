@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextField(
                   controller: _username,
                   decoration: const InputDecoration(
-                      hintText: 'Username', icon: Icon(Icons.account_circle)),
+                      hintText: 'Username', prefixIcon: Icon(Icons.account_circle)),
                 ),
               ),
               Padding(
@@ -47,23 +47,27 @@ class _LoginPageState extends State<LoginPage> {
                   enableSuggestions: false,
                   controller: _password,
                   decoration: const InputDecoration(
-                      hintText: 'Password', icon: Icon(Icons.lock)),
+                      hintText: 'Password', prefixIcon: Icon(Icons.lock)),
                 ),
               ),
               ElevatedButton(
                 onPressed: () {
                   name = _username.text;
                   password = int.parse(_password.text);
-                  if (name == 'Chotto Bondhura' && password == 56821)
+                  if (name == 'Chotto Bondhura' && password == 56821) {
                     print('Login Successful');
-                  else
+                  }
+                  else {
                     print('Login Unsuccessful');
+                  }
                 },
                 child: const Text('Login'),
               ),
-              SizedBox(height: 25),
-              const Text('Developed with ❤ by Fahim Shahriar', style: TextStyle(fontWeight: FontWeight.w100)),
-              const Text('Copyleft 2023, No Rights Reserved.', style: TextStyle(fontWeight: FontWeight.w100)),
+              const SizedBox(height: 25),
+              const Text('Developed with ❤ by Fahim Shahriar',
+                  style: TextStyle(fontWeight: FontWeight.w100)),
+              const Text('Copyleft 2023, No Rights Reserved.',
+                  style: TextStyle(fontWeight: FontWeight.w100)),
             ],
           ),
         ),
