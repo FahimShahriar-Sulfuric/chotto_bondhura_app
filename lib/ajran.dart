@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Avi extends StatelessWidget {
-  const Avi({super.key});
+class Ajran extends StatelessWidget {
+  const Ajran({super.key});
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -15,7 +15,7 @@ class Avi extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(top: 30),
                   child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/Avi.jpg'),
+                    backgroundImage: AssetImage('assets/Ajran.jpg'),
                     radius: 80,
                   ),
                 ),
@@ -25,7 +25,7 @@ class Avi extends StatelessWidget {
                     IconButton(
                         onPressed: () async {
                           await launchUrl(
-                            Uri.parse('fb://profile/100014635216526'),
+                            Uri.parse('fb://profile/100049367772732'),
                             mode: LaunchMode.externalApplication,
                           );
                         },
@@ -33,16 +33,8 @@ class Avi extends StatelessWidget {
                     IconButton(
                         onPressed: () async {
                           await launchUrl(
-                            Uri.parse('https://twitter.com/shahriaravi_'),
-                            mode: LaunchMode.externalNonBrowserApplication,
-                          );
-                        },
-                        icon: const FaIcon(FontAwesomeIcons.twitter)),
-                    IconButton(
-                        onPressed: () async {
-                          await launchUrl(
                             Uri.parse(
-                                'https://discord.com/users/610804106344529931'),
+                                'https://discord.com/users/532458828017696769'),
                             mode: LaunchMode.externalNonBrowserApplication,
                           );
                         },
@@ -51,7 +43,7 @@ class Avi extends StatelessWidget {
                         onPressed: () async {
                           await launchUrl(
                             Uri.parse(
-                                'https://www.reddit.com/user/EndwayAvi/'),
+                                'https://www.reddit.com/u/ajran_adib139'),
                             mode: LaunchMode.externalNonBrowserApplication,
                           );
                         },
@@ -59,7 +51,16 @@ class Avi extends StatelessWidget {
                     IconButton(
                         onPressed: () async {
                           await launchUrl(
-                            Uri.parse('https://t.me/ShahriarAvi'),
+                            Uri.parse(
+                                'https://www.youtube.com/channel/UCK7gw8tWmR1z1vOVhHr1z7g'),
+                            mode: LaunchMode.externalNonBrowserApplication,
+                          );
+                        },
+                        icon: const FaIcon(FontAwesomeIcons.youtube)),
+                    IconButton(
+                        onPressed: () async {
+                          await launchUrl(
+                            Uri.parse('https://t.me/ajranadib139'),
                             mode: LaunchMode.externalNonBrowserApplication,
                           );
                         },
@@ -74,7 +75,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Shahriar Avi',
+                  'Ajran Adib Avi',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -86,7 +87,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Alvi',
+                  'Olvi',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -98,7 +99,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  '18',
+                  '19',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -110,7 +111,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Male (Probably)',
+                  'Male',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -122,7 +123,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Sherwood International Pvt. School & College',
+                  'BAF Shaheen College Dhaka',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -134,7 +135,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Search in progress...',
+                  'Chemist',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -146,7 +147,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Girls',
+                  'Study',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -158,7 +159,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Dog',
+                  'Tiger',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -170,7 +171,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Playboism',
+                  'Graphics Designing',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -182,7 +183,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Finding new girls',
+                  'Can watch Bangladesh cricket match after losing for 5769 times in a row',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -194,7 +195,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Relatives',
+                  'Different opinion',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -206,7 +207,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'When he was a sperm',
+                  'N/A',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -218,7 +219,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  "F'ing zombies",
+                  'Verbal abuse',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -230,7 +231,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'He abducts aliens called "girls"',
+                  'Was destroyed by an alien after the final match of FIFA World Cup 2022',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -242,7 +243,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Bandarban',
+                  'Cricket stadium',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -266,7 +267,7 @@ class Avi extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Good boy who never touched weed',
+                  'Naughty',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
