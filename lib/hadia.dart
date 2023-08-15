@@ -25,7 +25,7 @@ class Hadia extends StatelessWidget {
                     IconButton(
                         onPressed: () async {
                           await launchUrl(
-                            Uri.parse('fb://profile/100049367772732'),
+                            Uri.parse('fb://profile/100041637375679'),
                             mode: LaunchMode.externalApplication,
                           );
                         },
@@ -34,42 +34,25 @@ class Hadia extends StatelessWidget {
                         onPressed: () async {
                           await launchUrl(
                             Uri.parse(
-                                'https://discord.com/users/532458828017696769'),
+                                'https://discord.com/users/823814583444570143'),
                             mode: LaunchMode.externalNonBrowserApplication,
                           );
                         },
                         icon: const FaIcon(FontAwesomeIcons.discord)),
-                    IconButton(
-                        onPressed: () async {
-                          await launchUrl(
-                            Uri.parse(
-                                'https://www.reddit.com/u/ajran_adib139'),
-                            mode: LaunchMode.externalNonBrowserApplication,
-                          );
-                        },
-                        icon: const FaIcon(FontAwesomeIcons.reddit)),
-                    IconButton(
-                        onPressed: () async {
-                          await launchUrl(
-                            Uri.parse(
-                                'https://www.youtube.com/channel/UCK7gw8tWmR1z1vOVhHr1z7g'),
-                            mode: LaunchMode.externalNonBrowserApplication,
-                          );
-                        },
-                        icon: const FaIcon(FontAwesomeIcons.youtube)),
-                    IconButton(
-                        onPressed: () async {
-                          await launchUrl(
-                            Uri.parse('https://t.me/ajranadib139'),
-                            mode: LaunchMode.externalNonBrowserApplication,
-                          );
-                        },
-                        icon: const FaIcon(FontAwesomeIcons.telegram)),
                   ],
                 ),
                 const Divider(
                   height: 30,
                 ),
+                const Text(
+                  'N.B: Very few info is available as she is not friendly. Read at your own risk.',
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 10),
                 const Text(
                   'Superhero Name',
                   style: TextStyle(color: Colors.white70),
@@ -87,7 +70,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Olvi',
+                  'N/A',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -99,7 +82,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  '19',
+                  '16',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -111,7 +94,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Male',
+                  'Female',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -123,7 +106,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'BAF Shaheen College Dhaka',
+                  'BCIC College',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -135,7 +118,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Chemist',
+                  'IDK, a good housewife maybe',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -147,7 +130,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Study',
+                  'Sharing reels',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -159,7 +142,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Tiger',
+                  'Fish',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -171,7 +154,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Graphics Designing',
+                  "That's hidden like herself but maybe art",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -183,7 +166,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Can watch Bangladesh cricket match after losing for 5769 times in a row',
+                  'Can remember friends even after not talking for 3259 days',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -195,7 +178,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Different opinion',
+                  'N/A',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -219,7 +202,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Verbal abuse',
+                  'Friendship with zombies',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -231,7 +214,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Was destroyed by an alien after the final match of FIFA World Cup 2022',
+                  'N/A',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -243,7 +226,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Cricket stadium',
+                  'N/A',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -255,7 +238,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'N/A',
+                  'Umme Habiba',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -267,7 +250,7 @@ class Hadia extends StatelessWidget {
                   style: TextStyle(color: Colors.white70),
                 ),
                 const Text(
-                  'Naughty',
+                  'Friendly',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
