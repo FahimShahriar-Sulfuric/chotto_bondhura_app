@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'package:chotto_bondhura_app/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }

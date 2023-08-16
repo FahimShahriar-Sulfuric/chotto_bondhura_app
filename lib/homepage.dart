@@ -1,69 +1,147 @@
+import 'package:chotto_bondhura_app/ajran.dart';
+import 'package:chotto_bondhura_app/alif.dart';
+import 'package:chotto_bondhura_app/avi.dart';
+import 'package:chotto_bondhura_app/fahim.dart';
+import 'package:chotto_bondhura_app/hadia.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  late String name;
-  late int password;
-  var icon = const Icon(Icons.favorite);
-
-  final TextEditingController _username = TextEditingController();
-  final TextEditingController _password = TextEditingController();
+class Homepage extends StatelessWidget {
+  const Homepage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Chotto Superhero Bondhura'),
+          automaticallyImplyLeading: false,
+        ),
         body: Center(
-          child: Column(
+          child: ListView(
             children: [
-              const SizedBox(height: 25),
-              Text(
-                'Chotto Bondhura',
-                style: TextStyle(
-                    color: Colors.blue[800],
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold),
+              Wrap(
+                spacing: 20,
+                runSpacing: 20,
+                alignment: WrapAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context, MaterialPageRoute(
+                          builder: (context) => Alif()),
+                      );
+                    },
+                    radius: 70,
+                    borderRadius: BorderRadius.circular(10),
+                    child: const Column(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(top: 30),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/Alif.jpg'),
+                            radius: 80,
+                          ),
+                        ),
+                        Text(
+                          'Alif',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context, MaterialPageRoute(
+                          builder: (context) => Avi()),
+                      );
+                    },
+                    radius: 70,
+                    borderRadius: BorderRadius.circular(10),
+                    child: const Column(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(top: 30),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/Avi.jpg'),
+                            radius: 80,
+                          ),
+                        ),
+                        Text(
+                          'Avi',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context, MaterialPageRoute(
+                          builder: (context) => Fahim()),
+                      );
+                    },
+                    radius: 70,
+                    borderRadius: BorderRadius.circular(10),
+                    child: const Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assets/Fahim.jpg'),
+                          radius: 80,
+                        ),
+                        Text(
+                          'Fahim',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context, MaterialPageRoute(
+                          builder: (context) => Ajran()),
+                      );
+                    },
+                    radius: 70,
+                    borderRadius: BorderRadius.circular(10),
+                    child: const Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assets/Ajran.jpg'),
+                          radius: 80,
+                        ),
+                        Text(
+                          'Ajran',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context, MaterialPageRoute(
+                          builder: (context) => Hadia()),
+                      );
+                    },
+                    radius: 70,
+                    borderRadius: BorderRadius.circular(10),
+                    child: const Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: AssetImage('assets/Hadia.jpg'),
+                          radius: 80,
+                        ),
+                        Text(
+                          'Hadia',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 25, right: 25, top: 25),
-                child: TextField(
-                  controller: _username,
-                  decoration: const InputDecoration(
-                      hintText: 'Username', icon: Icon(Icons.account_circle)),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: 25, right: 25, top: 25, bottom: 25),
-                child: TextField(
-                  obscureText: true,
-                  autocorrect: false,
-                  enableSuggestions: false,
-                  controller: _password,
-                  decoration: const InputDecoration(
-                      hintText: 'Password', icon: Icon(Icons.lock)),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  name = _username.text;
-                  password = int.parse(_password.text);
-                  if (name == 'Chotto Bondhura' && password == 56821)
-                    print('Login Successful');
-                  else
-                    print('Login Unsuccessful');
-                },
-                child: const Text('Login'),
-              ),
-              SizedBox(height: 25),
-              const Text('Developed with ❤ by Fahim Shahriar', style: TextStyle(fontWeight: FontWeight.w100)),
-              const Text('Copyleft 2023, No Rights Reserved.', style: TextStyle(fontWeight: FontWeight.w100)),
             ],
           ),
         ),
