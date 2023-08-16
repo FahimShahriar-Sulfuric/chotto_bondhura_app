@@ -8,6 +8,9 @@ class Avi extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Avi'),
+        ),
         body: ListView(
           children: [
             Column(

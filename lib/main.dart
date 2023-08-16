@@ -1,9 +1,3 @@
-import 'package:chotto_bondhura_app/ajran.dart';
-import 'package:chotto_bondhura_app/alif.dart';
-import 'package:chotto_bondhura_app/avi.dart';
-import 'package:chotto_bondhura_app/fahim.dart';
-import 'package:chotto_bondhura_app/hadia.dart';
-import 'package:chotto_bondhura_app/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:chotto_bondhura_app/login_page.dart';
 
@@ -29,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
-      home: const Fahim(),
+      home: const LoginPage(),
     );
   }
 }

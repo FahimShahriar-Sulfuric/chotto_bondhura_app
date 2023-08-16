@@ -8,6 +8,9 @@ class Alif extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Alif'),
+        ),
         body: ListView(
           children: [
             Column(

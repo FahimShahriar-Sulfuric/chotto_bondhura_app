@@ -8,6 +8,9 @@ class Fahim extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Fahim'),
+        ),
         body: ListView(
           children: [
             Column(

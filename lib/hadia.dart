@@ -8,6 +8,9 @@ class Hadia extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Hadia'),
+        ),
         body: ListView(
           children: [
             Column(

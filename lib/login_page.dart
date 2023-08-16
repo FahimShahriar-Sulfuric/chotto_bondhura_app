@@ -1,3 +1,4 @@
+import 'package:chotto_bondhura_app/homepage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -35,7 +36,8 @@ class _LoginPageState extends State<LoginPage> {
                 child: TextField(
                   controller: _username,
                   decoration: const InputDecoration(
-                      hintText: 'Username', prefixIcon: Icon(Icons.account_circle)),
+                      hintText: 'Username',
+                      prefixIcon: Icon(Icons.account_circle)),
                 ),
               ),
               Padding(
@@ -55,10 +57,15 @@ class _LoginPageState extends State<LoginPage> {
                   name = _username.text;
                   password = int.parse(_password.text);
                   if (name == 'Chotto Bondhura' && password == 56821) {
-                    print('Login Successful');
-                  }
-                  else {
-                    print('Login Unsuccessful');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Homepage()),
+                    );
+                  } else {
+                    const snackBar = SnackBar(
+                      content: Text('Wrong username or password'),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   }
                 },
                 child: const Text('Login'),
@@ -66,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 25),
               const Text('Developed with ❤ by Fahim Shahriar',
                   style: TextStyle(fontWeight: FontWeight.w100)),
-              const Text('Copyleft 2023, No Rights Reserved.',
+              const Text('Copyleft 2023, All Rights Reserved.',
                   style: TextStyle(fontWeight: FontWeight.w100)),
             ],
           ),
